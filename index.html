@@ -1,1 +1,123 @@
-Placeholder for the website of the NeurIPS 2020 Workshop on Object Representations for Learning and Reasoning (ORLR)
+---
+layout: default
+---
+
+<div class="row">
+<p>
+  Recent advances in deep reinforcement learning and robotics have enabled agents to achieve superhuman performance on
+  a variety of challenging games [1-4] and learn robotic skills [5-7]. While these results are very promising, several
+  open problems remain. In order to function in real-world environments, learned policies must be both robust to input
+  perturbations and be able to rapidly generalize or adapt to novel situations. Moreover, to collaborate and live with
+  humans in these environments, the goals and actions of embodied agents must be interpretable and compatible with
+  human representations of knowledge. Hence, it is natural to consider how humans so successfully perceive, learn, and
+  plan to build agents that are equally successful.
+</p>
+<p>
+  There is much evidence to suggest that objects are a core level of abstraction at which humans perceive and
+  understand the world [8,9]. Objects have the potential to provide a compact, causal, robust, and generalizable
+  representation of the world. They may be used effectively in a variety of important learning and control tasks,
+  including learning environment models, decomposing tasks into subgoals, and learning task- or situation-dependent
+  object affordances. Recently, there have been many advancements in scene representation, allowing scenes to be
+  represented by their constituent objects, rather than at the level of pixels [10-14]. While these works have shown
+  promising results, there is still a lack of agreement on how to best represent objects, how to learn object
+  representations, and how best to leverage them in agent training.
+</p>
+<p>
+	In this workshop we seek to build a consensus on what object representations should be by engaging with researchers
+  from developmental psychology. Furthermore, we aim to define concrete tasks and capabilities that agents building on
+  top of such abstract representations of the world should succeed at. We will discuss how object representations may
+  be learned through invited presenters with expertise in unsupervised and supervised object representation learning
+  methods. Finally, we will start conversations on new frontiers in object learning, both through a panel and speaker
+  series as well as a broader call to the community for research on applications of object representations.
+</p>
+
+</div>
+
+<div id="goals-and-outcomes" class="row">
+<h2>Workshop Goals and Outcomes</h2>
+<p>
+<ol>
+  <li>
+    <i>To host some of the world’s top child developmentalists, roboticists, and machine learning researchers in our set of
+      talks and panels.</i> Objects are a primary concept in leading theories in developmental psychology on how young
+    children explore and learn about the physical world. It has also been shown that objects are useful abstractions
+    in designing machine learning algorithms for embodied agents. We hope such an opportunity will enable AI
+    researchers to learn from cognitive scientists about core properties of objects that can be translated into
+    inductive biases for algorithms, and cognitive scientists to learn from AI researchers the challenges in representing
+    objects from real data.
+  </li>
+  <li><i>To define what an object representation is in terms of what it should do.</i> Specifically, we seek to create a
+    consensus on the types of environments and tasks that will best explore the advantages and disadvantages of
+    differing approaches to building object representations.
+  </li>
+  <li>
+    <i>To develop an understanding of key challenges for applying object representations to real-world systems.</i>
+    We facilitate this discussion by inviting experts on robotic control to talk about constraints, requirements, and
+    use-cases for real-world perception. More generally, by viewing object perception and representation as a part of a
+    larger system, we will facilitate a discussion about synergistic ways in which perception and control can interact.
+    To that extent we will host a panel that includes experts from these respective domains.
+  </li>
+  <li>
+    <i> To provide a hub for the object learning community and a venue for object representation and
+    learning research focusing on a broader set of questions, including:</i>
+    <ul>
+      <li><i>How can object representations be learned?</i> How to learn object representations is still an open
+        question. Many recent papers have explored this, often in simplified environments, but it is still unclear how
+        an object representation of a realistic 3D environment may be quickly learned.</li>
+      <li><i>Applications of object representations to language, explainability, and other areas.</i> The close
+        alignment between object representations and human perception and understanding lends them to research areas
+        that involve human interaction or data. In particular, we are excited to see research on intersections of
+        grounded NLP and objects [15] and agent/robot interface and explainability using objects [16].</li>
+    </ul>
+  </li>
+</ol>
+</p>
+
+</div>
+
+<!--<div id="sponsors" class="row">-->
+<!--<h2>Sponsors</h2>-->
+<!--<div class="break"></div>-->
+<!--<div>-->
+<!--<p>-->
+<!--  <a href="http://deepmind.com"><img src="images/deepmind.png" height="80px"/></a>-->
+<!--  <a href="https://www.kakaobrain.com"><img src="images/kakaobrain.svg" height="40px"/></a>-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+
+<div id="organizers" class="row">
+<h2>Organizers</h2>
+<div class="break"></div>
+<ul>
+  <li><a href="https://sites.google.com/cs.washington.edu/william-agnew/home">William Agnew</a> (University of Washington)</li>
+  <li><a href="https://mila.quebec/en/person/rim-assouel/">Rim Assouel</a> (MILA / Montreal University)</li>
+  <li><a href="https://mbchang.github.io/">Michael Chang</a> (UC Berkeley)</li>
+  <li><a href="https://scholar.google.com/citations?user=faiFBhoAAAAJ&hl=ja">Antonia Creswell</a> (DeepMind)</li>
+  <li><a href="http://www.gopniklab.berkeley.edu/lab-members">Eliza Kosoy</a> (UC Berkeley)</li>
+  <li><a href="https://homes.cs.washington.edu/~aravraj/">Aravind Rajeswaran</a> (University of Washington)</li>
+  <li><a href="http://www.sjoerdvansteenkiste.com">Sjoerd van Steenkiste</a> (IDSIA)</li>
+</ul>
+</div>
+
+<div id="references" class="row">
+<h2>References</h2>
+<ol>
+  <li>Silver, David, et al. "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm."</li>
+  <li>Berner, Christopher, et al. "DOTA 2 with Large Scale Deep Reinforcement Learning."</li>
+  <li>Vinyals, Oriol, et al. "Alphastar: Mastering the Real-Time Strategy Game Starcraft II."</li>
+  <li>Mnih, Volodymyr, et al. "Playing atari with deep reinforcement learning."</li>
+  <li>Andrychowicz, OpenAI: Marcin, et al. "Learning dexterous in-hand manipulation."</li>
+  <li>Kalashnikov, Dmitry, et al. "Qt-opt: Scalable deep reinforcement learning for vision-based robotic manipulation."</li>
+  <li>Zeng, Andy, et al. "Learning synergies between pushing and grasping with self-supervised deep reinforcement learning."</li>
+  <li>Spelke, Elizabeth. “Principles of Object Perception.”</li>
+  <li>Renée Baillargeon. “Physical reasoning in infancy”</li>
+  <li>Goel, Vikash, et al. “Unsupervised Video Object Segmentation for Deep Reinforcement Learning.”</li>
+  <li>Greff, Klaus, et al. “Multi-Object Representation Learning with Iterative Variational Inference.”</li>
+  <li>Anand, Ankesh, et al. “Unsupervised State Representation Learning in Atari”</li>
+  <li>Kulkarni, Tejas et al. “Unsupervised Learning of Object Keypoints for Perception and Control.”</li>
+  <li>Lin, Zhixuan, et al. “Space: Unsupervised Object-Oriented Scene Representation via Spatial Attention and Decomposition.”</li>
+  <li>Bisk, Yonatan, et al. "Experience Grounds Language."</li>
+  <li>Shridhar, Mohit, and David Hsu. "Interactive Visual Grounding of Referring Expressions for Human-Robot Interaction."</li>
+</ol>
+</div>
