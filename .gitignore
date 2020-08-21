@@ -1,0 +1,9 @@
+_site
+.idea
+scripts/data
+scripts/__pycache__
+.DS_Store
+scripts/secret.py
+scripts/templates
+vendor/
+.bundle/
