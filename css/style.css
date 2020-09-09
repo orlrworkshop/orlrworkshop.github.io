@@ -130,6 +130,13 @@ table {
 /*  font-style: italic;*/
 /*}*/
 
+.speaker-profile {
+  float: left;
+  width: 200px;
+  padding-right: 20px;
+  padding-bottom: 15px
+}
+
 #pc td {
   padding-right: 3em;
   padding-left: 1em;
