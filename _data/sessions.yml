@@ -1,0 +1,444 @@
+- id: 1
+  papers:
+  - abstract: Robotic planning in realistic environments requires searching in large
+      planning spaces. A powerful concept for guiding the search is affordance, which
+      models what actions can be successful in a given situation. However, the classical
+      notion of affordance is unsuitable for planning because it only informs the
+      robot about the immediate outcome of actions instead of what actions are best
+      for achieving a long-term goal. In this paper, we introduce a new affordance
+      representation and a learning-to-plan framework that enable the robot to reason
+      about the long-term effects of actions through modeling what actions are possible
+      in the future. We show that our method, Deep Affordance Foresight, can effectively
+      learn multi-step tool-use tasks and quickly adapt to a new longer horizon task.
+    authors: "Danfei Xu, Ajay Mandlekar, Roberto Mart\xEDn-Mart\xEDn, Yuke Zhu, and\
+      \ Li Fei-Fei"
+    camera_ready: false
+    cmt_id: 20
+    id: 20
+    kind: oral
+    session: 1
+    title: 'Deep Affordance Foresight: Planning for What Can Be Done Next'
+    track: research
+  - abstract: 'If an agent understands how to reason about some objects, can it generalize
+      this understanding to new objects that it has never seen before? We propose
+      the Object-based Generalization for Reasoning Environment (OGRE) for testing
+      object generalization in the context of active physical reasoning. OGRE emphasizes
+      evaluating agents by how efficiently they solve novel physical reasoning tasks,
+      not just how well they can predict the future. OGRE provides two levels of generalization:
+      generalization over reasoning strategies with familiar objects, and generalization
+      over new object types that still share similar material properties to those
+      in training. We run three baseline agents on OGRE, showing that an image-based
+      Deep Q-Network can learn reasoning strategies that generalize in a limited way
+      across familiar object types, but does not generalize at all to new object types.
+      We hope OGRE will encourage advances in building object representations that
+      more explicitly enable generalizable reasoning and planning compared to previous
+      benchmarks.'
+    authors: Kelsey Allen, Anton Bakhtin, Kevin Smith, Joshua Tenenbaum, and Laurens
+      van der Maaten
+    camera_ready: false
+    cmt_id: 9
+    id: 9
+    kind: oral
+    session: 1
+    title: 'OGRE: An Object-based Generalization for Reasoning Environment'
+    track: research
+  - abstract: "We present neural architectures that disentangle RGB-D images into\
+      \ objects\u2019 shapes and styles and a map of the background scene and explore\
+      \ their application for few-shot concept classification. Our networks incorporate\
+      \ architectural biases that reflect the image formation process, 3D geometry\
+      \ of the world scene, and shape-style interplay. They are trained end-to-end\
+      \ self-supervised by predicting views in static scenes, alongside a small number\
+      \ of 3D object boxes. Objects and scenes are represented in terms of 3D feature\
+      \ grids in the bottleneck of the network. We show that the proposed 3D neural\
+      \ representations are compositional: they can generate novel 3D scene feature\
+      \ maps by mixing object shapes and styles, resizing and adding the resulting\
+      \ object 3D feature maps over background scene feature maps. We show that classifiers\
+      \ for object categories, colour, materials, and spatial relationships trained\
+      \ over the disentangled 3D feature sub-spaces generalize better with dramatically\
+      \ fewer examples than the current state-of-the-art, and enable a visual question\
+      \ answering system that uses them as its modules to generalize one-shot to novel\
+      \ objects in the scene"
+    authors: Mihir Prabhudesai, Shamit Lal, Darshan Patil, Hsiao-Yu Tung, Adam Harley,
+      and Katerina Fragkiadaki
+    camera_ready: false
+    cmt_id: 17
+    id: 17
+    kind: oral
+    session: 1
+    title: Disentangling 3D Prototypical Networks for Few-Shot Concept Learning
+    track: research
+  - abstract: 'We explore the problem of estimating the mass distribution of an articulated
+      object by an interactive robotic agent. Our method predicts the mass distribution
+      of an object by using limited sensing and actuating capabilities of a robotic
+      agent that is interacting with the object. We are inspired by the role of exploratory
+      play in human infants. We take the combined approach of supervised and reinforcement
+      learning to train an agent that learns to strategically interact with the object
+      to estimate the object''s mass distribution. Our method consists of two neural
+      networks: (i) the policy network which decides how to interact with the object,
+      and (ii) the predictor network that estimates the mass distribution given a
+      history of observations and interactions. Using our method, we train a robotic
+      arm to estimate the mass distribution of an object with moving parts (e.g. an
+      articulated rigid body system) by pushing it on a surface with unknown friction
+      properties. We also demonstrate how our training from simulations can be transferred
+      to real hardware using a small amount of real-world data for fine-tuning. We
+      use a UR10 robot to interact with 3D printed articulated chains with varying
+      mass distributions and show that our method significantly outperforms the baseline
+      system that uses random pushes to interact with the object.'
+    authors: Niranjan Kumar Kannabiran, Sehoon Ha, Irfan Essa, and Karen Liu
+    camera_ready: false
+    cmt_id: 25
+    id: 25
+    kind: oral
+    session: 1
+    title: Estimating Mass Distribution of Articulated Objects using Non-prehensile
+      Manipulation
+    track: research
+  - abstract: Object-centric world models learn useful representations for planning
+      and control but have so far only been applied to synthetic and deterministic
+      environments. We introduce a perceptual-grouping-based world model for the dual
+      task of extracting object-centric representations and modeling stochastic dynamics
+      in visually complex and noisy video environments. The world model is built upon
+      a novel latent state space model that learns the uncertainty for object discovery
+      and dynamics separately. This design is motivated by the disparity in available
+      information that exists between the discovery component, which takes a provided
+      video frame and decomposes it into objects, and the dynamics component, which
+      predicts representations for future video frames conditioned only on past frames.
+      To learn the dynamics uncertainty, we introduce a best-of-many-rollouts objective.
+      We show that the world model successfully learns accurate and diverse rollouts
+      in a real-world robotic manipulation environment with noisy actions while learning
+      interpretable object-centric representations.
+    authors: Patrick Emami, Pan He, Anand Rangarajan, and Sanjay Ranka
+    camera_ready: false
+    cmt_id: 3
+    id: 3
+    kind: oral
+    session: 1
+    title: A Symmetric and Object-Centric World Model for Stochastic Environments
+    track: research
+  - abstract: Lake et al. 2015 presented the Omniglot data set, made up of 1623 different
+      handwritten characters from 50 different alphabets, and designed to study how
+      people generate and classify those characters. They also proposed a model for
+      one-shot learning of new concepts based on inferring compositionally structured
+      generative models, and using those models to transfer from familiar concepts
+      to new ones. Their Bayesian Programming Language (BPL) model was able to both
+      classify and generate characters from the Omniglot data set in ways that were
+      similar to adult behavior. However, adults have many years of experience, and
+      even explicit instruction, in producing and comprehending letters. Would a similar
+      model apply to children without this extensive prior knowledge? In this paper
+      we introduce a new data set called Omniglot Jr. that is composed of a subset
+      of the Omniglot letters as generated by children ages 3-6, We propose the challenge
+      of achieving BPL benchmarks by both being able to classify and generate novel
+      characters that are generated by children instead of adults.We present the results
+      of training BPL with children's data in both classification and generation,
+      and we find that BPL achieves higher classification accuracy and generates more
+      adult looking letters than the children themselves do. This suggests that despite
+      the inherent messiness of children's letters, their behavior reflects the same
+      primitives and generation process that adults use. We challenge alternative
+      models to perform on this data set. We also present the challenge of reproducing
+      the children's distinctive pattern of mistakes. Adult abilities such as character
+      recognition depend on the learning we do as children, this challenge should
+      help us understand how that learning is possible, and how it can be simulated
+      in computational systems.
+    authors: Eliza Kosoy, Masha Belyi, Charlie Snell, Joshua Tenenbaum, Brenden M
+      Lake, and Alison Gopnik
+    camera_ready: false
+    cmt_id: 22
+    id: 22
+    kind: poster
+    session: 1
+    title: The Omniglot Jr. challenge; Can a model achieve child-level character generation
+      and classification?
+    track: research
+  - abstract: Recent advances in reinforcement learning have shown its potential to
+      tackle complex real-life tasks. However, as the task's dimensionality increases,
+      reinforcement learning methods tend to struggle. To overcome this, we explore
+      methods for representing the semantic information embedded in the state. While
+      previous methods focused on information in its raw form (e.g., raw visual input),
+      we propose representing the state as natural language. Language can represent
+      complex scenarios and concepts, making it a favorable candidate for representation.
+      Empirical evidence, within the domain of ViZDoom, suggests that natural language
+      based agents are more robust, converge faster and perform better than vision
+      based agents, showing the benefit of using natural language representations
+      for reinforcement learning.
+    authors: Erez Schwartz, Guy Tennenholtz, Chen Tessler, and Shie Mannor
+    camera_ready: false
+    cmt_id: 14
+    id: 14
+    kind: poster
+    session: 1
+    title: Semantic State Representation for Reinforcement Learning
+    track: research
+  - abstract: 'We present a grounded language model for Information Retrieval, that
+      learns lexical and compositional meaning for search queries through (dense representations
+      of) objects; in our case, target entities are products, modeled as low-dimensional
+      embeddings trained over behavioural data from a digital shop. Crucially, the
+      proposed semantics exhibits compositional virtues but it is still fully learnable
+      without explicit labelling: our domain of reference, denotation and composition
+      are all learned from user data only. We benchmark the grounded model against
+      SOTA intra-textual models (such as word2vec and BERT), and we show that it provides
+      more accuracy and better generalizations.'
+    authors: Federico Bianchi, Jacopo Tagliabue, and Ciro Greco
+    camera_ready: false
+    cmt_id: 12
+    id: 12
+    kind: poster
+    session: 1
+    title: 'Word(s) and Object(s): Grounded Language Learning In Information Retrieval'
+    track: research
+  - abstract: Visual saliency has emerged as a major visualization tool for interpreting
+      deep reinforcement learning (RL) agents. However, much of the existing research
+      uses it as an analyzing tool rather than an inductive bias for policy learning.
+      In this work, we use visual attention as an inductive bias for RL agents. We
+      propose a novel self-supervised attention learning approach which could 1. learn
+      to select regions of interest without explicit annotations, and 2. act as a
+      plug for existing deep RL methods to improve the learning performance. We empirically
+      show that the self-supervised attention-aware deep RL methods outperform the
+      baselines in the context of both the rate of convergence and performance. Furthermore,
+      the proposed self-supervised attention is not tied with specific policies, nor
+      restricted to a specific scene. We posit that the proposed approach is a universal
+      self-supervised attention module for multi-task learning and transfer learning,
+      and empirically validate the generalization ability of the proposed method.
+      Finally, we can also extract object keypoints as a byproduct of the learned
+      attention. We demonstrate both qualitatively and quantitatively that the extracted
+      object keypoints are superior to existing methods.
+    authors: Haiping Wu, Khimya Khetarpal, and Doina Precup
+    camera_ready: false
+    cmt_id: 16
+    id: 16
+    kind: poster
+    session: 1
+    title: Self-Supervised Attention-Aware Reinforcement Learning
+    track: research
+  - abstract: Learning long-term dynamics models is the key to understanding physical
+      common sense. Most existing approaches on learning dynamics from visual input
+      sidestep long-term predictions by resorting to rapid re-planning with short-term
+      models. This not only requires such models to be super accurate but also limits
+      them only to tasks where an agent can continuously obtain feedback and take
+      action \textit{at each step} until completion. In this paper, we aim to leverage
+      the ideas from success stories in visual recognition tasks to build object representations
+      that can capture inter-object and object-environment interactions over a long
+      range. To this end, we propose Region Proposal Interaction Networks (RPIN),
+      which reason about each object's trajectory in a latent region-proposal feature
+      space. Our approach outperforms prior methods by a significant margin both in
+      terms of prediction quality and their ability to plan for downstream tasks,
+      and also generalize well to novel environments. Results are available at https://sites.google.com/view/orlr-workshop-rpin.
+    authors: Haozhi Qi, Xiaolong Wang, Deepak Pathak, Yi Ma, and Jitendra Malik
+    camera_ready: false
+    cmt_id: 18
+    id: 18
+    kind: poster
+    session: 1
+    title: Learning Long-term Visual Dynamics with Region Proposal Interaction Networks
+    track: research
+  - abstract: Graph Neural Networks are perfectly suited to capture latent interactions
+      occurring in the spatio-temporal domain but when an explicit structure is not
+      available, it is not obvious what atomic elements should be represented as nodes.
+      We design nodes that are clearly localised in space, with inductive bias for
+      modeling the relations between instances. Current works are using external object
+      detectors or fixed regions to extract graph nodes, while we propose a module
+      for generating the regions associated with each node dynamically, without explicit
+      object-level supervision. Constructing these localised, adaptive nodes gives
+      our model a bias towards object-centric representations and we show that it
+      improves the modeling of visual interactions. By relying on a few localized
+      nodes, our method learns to focus on salient regions leading to a more explainable
+      model. Our model achieves superior results on video classification tasks involving
+      instance interactions.
+    authors: Iulia Duta, Andrei L Nicolicioiu, and Marius Leordeanu
+    camera_ready: false
+    cmt_id: 5
+    id: 5
+    kind: poster
+    session: 1
+    title: Dynamic Regions Graph Neural Networks for Spatio-Temporal Reasoning
+    track: research
+  - abstract: 'In this position paper, we argue that short programs in high-level,
+      Turing-complete, human-readable symbolic languages are an attractive representation
+      for designed objects: they have potential benefits both for general agents and
+      for simple AI/ML tools. In principle they allow all available structure to be
+      captured, and they allow for introspection. They may also parallel mechanisms
+      of human thought. Actually finding these programs is a very difficult but worthwhile
+      research problem.'
+    authors: James McDermott
+    camera_ready: false
+    cmt_id: 2
+    id: 2
+    kind: poster
+    session: 1
+    title: Understanding designed objects by program synthesis
+    track: research
+  - abstract: We propose FOSAE++, an unsupervised end-to-end neural system that generates
+      a compact discrete state transition model (dynamics / action model) from raw
+      visual observations. Our representation can be exported to Planning Domain Description
+      Language (PDDL), allowing symbolic state-of-the-art classical planners to perform
+      high-level task planning. FOSAE++ expresses states and actions in First-Order
+      Logic (FOL). It is the first unsupervised neural system that fully supports
+      FOL in PDDL action modeling, while existing systems are limited to continuous,
+      propositional, or property-based representations, and/or require labeled actions.
+    authors: Masataro Asai
+    camera_ready: false
+    cmt_id: 1
+    id: 1
+    kind: poster
+    session: 1
+    title: Grounding Lifted PDDL Action Models
+    track: research
+  - abstract: "Dexterous robotic hands are appealing for their agility and human-like\
+      \ morphology, yet their high degree of freedom makes learning to manipulate\
+      \ challenging. We introduce an approach for learning dexterous grasping. Our\
+      \ key idea is to embed an object-centric visual affordance model within a deep\
+      \ reinforcement learning loop to learn grasping policies that favor the same\
+      \ object regions favored by people. Unlike traditional approaches that learn\
+      \ from human demonstration trajectories (e.g., hand joint sequences captured\
+      \ with a glove), the proposed prior is object-centric and image-based, allowing\
+      \ the agent to anticipate useful affordance regions for objects unseen during\
+      \ policy learning. We demonstrate our idea with a 30-DoF five-fingered robotic\
+      \ hand simulator on 40 objects from two datasets, where it successfully and\
+      \ efficiently learns policies for stable grasps. Our affordance-guided policies\
+      \ are significantly more effective, generalize better to novel objects, and\
+      \ train 3\xD7faster than the baselines. Our work offers a step towards manipulation\
+      \ agents that learn by watching how people use objects, without requiring state\
+      \ information about the human body."
+    authors: Priyanka Mandikal and Kristen Grauman
+    camera_ready: false
+    cmt_id: 4
+    id: 4
+    kind: poster
+    session: 1
+    title: Dexterous Robotic Grasping with Object-Centric Visual Affordances
+    track: research
+  - abstract: A common goal in representation learning is to meaningfully disentangle
+      high-dimensional and complex observations of the world into their underlying
+      ground-truth factors of variation. Recent work in disentangled representation
+      learning has shown that unsupervised approaches rely on fully supervised disentanglement
+      metrics, which assume access to labels for ground-truth factors of variation.
+      In many real-world cases this is expensive to collect, or difficult to model,
+      such as for perception. Here we empirically show that a weakly-supervised downstream
+      task based on odd-one-out observations is suitable for model selection by observing
+      high correlation with existing disentanglement metrics, as well as on a difficult
+      downstream abstract visual reasoning task. We also show that a bespoke metric-learning
+      VAE model which performs highly on this task also out-performs other standard
+      unsupervised and a weakly-supervised disentanglement model across several metrics.
+    authors: Salman Mohammadi, Anders Kirk Uhrenholt, and Bjoern Sand Jensen
+    camera_ready: false
+    cmt_id: 13
+    id: 13
+    kind: poster
+    session: 1
+    title: Odd-One-Out Representation Learning
+    track: research
+  - abstract: Capturing contextual dependencies has proven useful to improve the representational
+      power of deep neural networks. Recent approaches that focus on modeling global
+      context, such as self-attention and non-local operation, achieve this goal by
+      enabling unconstrained pairwise interactions between elements. In this work,
+      we consider learning representations for deformable objects which can benefit
+      from context exploitation by modeling the structural dependencies that the data
+      intrinsically possesses. To this end, we provide a novel structure-regularized
+      attention mechanism, which formalizes feature interaction as structural factorization
+      through the use of a pair of light-weight operations. The instantiated building
+      blocks can be directly incorporated into modern convolutional neural networks,
+      to boost the representational power in an efficient manner. Comprehensive studies
+      on multiple tasks and empirical comparisons with modern attention mechanisms
+      demonstrate the gains brought by our method in terms of both performance and
+      model complexity. We further investigate its effect on feature representations,
+      showing that our trained models can capture diversified representations characterizing
+      object parts without resorting to extra supervision.
+    authors: Shenao Zhang, Li Shen, Zhifeng Li, and Wei Liu
+    camera_ready: false
+    cmt_id: 21
+    id: 21
+    kind: poster
+    session: 1
+    title: Structure-Regularized Attention for Deformable Object Representation
+    track: research
+  - abstract: 'Contrastive learning of object-based representations recently emerged
+      as an attractive alternative to reconstruction-based training. Prior approaches
+      focus on contrasting individual object representations (slots) against one another.
+      However, a fundamental problem with this approach is, that the overall contrastive
+      loss is the same for (i) representing a different object in each slot, as it
+      is for (ii) (re-)representing the same object in all slots. Thus, this objective
+      does not inherently push towards the emergence of object-centric representations
+      in the slots. We address this problem by introducing a global, set-based contrastive
+      loss: instead of contrasting individual slot representation against one another,
+      we aggregate the representations and contrast the joined sets against one another.
+      Additionally, we introduce attention-based encoders to this contrastive setup
+      which simplifies training and provides interpretable object masks. Our results
+      on two synthetic video datasets suggest that this approach compares favorably
+      against previous contrastive methods in terms of reconstruction, future prediction
+      and object separation performance.'
+    authors: "Sindy L\xF6we, Klaus Greff, Rico Jonschkowski, Alexey Dosovitskiy, and\
+      \ Thomas Kipf"
+    camera_ready: false
+    cmt_id: 27
+    id: 27
+    kind: poster
+    session: 1
+    title: Learning Object-Centric Video Models by Contrasting Sets
+    track: research
+  - abstract: Discrete representations have been key in enabling robots to plan at
+      more abstract levels and solve temporally-extended tasks more efficiently for
+      decades. However, they typically require expert specifications. On the other
+      hand, deep reinforcement learning aims to learn to solve tasks end-to-end, but
+      struggles with long-horizon tasks. In this work, we propose Discrete Object-factorized
+      Representation Planning (DORP), which learns temporally-abstracted discrete
+      representations from exploratory video data in an unsupervised fashion via a
+      mutual information maximization objective. DORP plans a sequence of abstract
+      states for a low-level model-predictive controller to follow. In our experiments,
+      we show that DORP robustly solves unseen long-horizon tasks. Interestingly,
+      it discovers independent representations per object and binary properties such
+      as a key-and-door.
+    authors: Thanard Kurutach, Julia Peng, Yang Gao, Stuart Russell, and Pieter Abbeel
+    camera_ready: false
+    cmt_id: 7
+    id: 7
+    kind: poster
+    session: 1
+    title: Discrete Predictive Representation for Long-horizon Planning
+    track: research
+  - abstract: Incorporating domain-specific priors in search and navigation tasks
+      has shown promising results in improving generalization and sample complexity
+      over end-to-end trained policies. In this work, we study how object embeddings
+      that capture spatial semantic priors can guide the search and navigation task
+      in a structured environment. We know that humans can search for an object like
+      a book, or a plate in an unseen house, based on spatial semantics of bigger
+      objects detected. For example, a book is likely to be on a bookshelf or a table,
+      whereas a plate is likely to be in a cupboard or dishwasher. We propose a method
+      to incorporate such spatial semantic awareness in robots by leveraging pre-trained
+      language models and multi-relational knowledge bases as object embeddings. We
+      demonstrate the performance of using these object embeddings to search a query
+      object in an unseen indoor environment. We measure the performance of these
+      embeddings in an indoor simulator (AI2Thor). We further evaluate different pre-trained
+      embedding on Success Rate (SR) and Success weighted by Path Length (SPL).
+    authors: Vidhi Jain, Shishir Patil, and Prakhar Agarwal
+    camera_ready: false
+    cmt_id: 26
+    id: 26
+    kind: poster
+    session: 1
+    title: Learning Embeddings that Capture Spatial Semantics for Indoor Navigation
+    track: research
+  - abstract: 'Many real-world tasks require agents to coordinate their behavior to
+      achieve shared goals. Here we investigate how humans use natural language to
+      collaboratively solve physical assembly problems more effectively over time.
+      Human participants were paired up in an online environment to reconstruct scenes
+      containing a pair of block towers. Each participant was assigned either the
+      role of Architect or Builder: the Architect provided assembly instructions to
+      the Builder, who aimed to reconstruct each scene as accurately as possible.
+      We found that Architects provided increasingly concise instructions to Builders
+      across repeated attempts on each pair of towers, reflecting the use of more
+      abstract referring expressions that captured the hierarchical structure of each
+      scene (i.e., tower-level expressions subsuming block-level ones). Moreover,
+      our data suggest that different pairs of participants converged on different
+      expressions, suggesting that multiple viable solutions exist for mapping tokens
+      of natural language to object configurations. Taken together, our paper presents
+      an empirical paradigm, human dataset, and set of evaluation metrics that can
+      be used to guide the development of artificial agents that emulate human-like
+      compositionality and abstraction.'
+    authors: William P McCarthy, Judy Fan, Robert Hawkins, and Cameron Holdaway
+    camera_ready: false
+    cmt_id: 15
+    id: 15
+    kind: poster
+    session: 1
+    title: Emergence of compositional abstractions in human collaborative assembly
+    track: research
+  title: Session TBD
