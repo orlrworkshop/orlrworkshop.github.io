@@ -31,14 +31,16 @@ def load_presentation_data():
     data["session_title"] = data["session"].replace({
         "invited": "Invited Talk",
         "opening": "Opening Remarks",
-        "3:30-4:30pm": "Session 1 (3:30-4:30pm UTC)",
-        "11:00-11:59pm": "Session 2 (11:00-11:59pm UTC)",
+        # "3:30-4:30pm": "Session 1 (3:30-4:30pm UTC)",
+        # "11:00-11:59pm": "Session 2 (11:00-11:59pm UTC)",
+        "11:59-11:59pm": "Session TBD",
     })
     data["session_id"] = data["session"].replace({
         "invited": 0,
         "opening": 0,
-        "3:30-4:30pm": 1,
-        "11:00-11:59pm": 2,
+        # "3:30-4:30pm": 1,
+        # "11:00-11:59pm": 2,
+        "11:59-11:59pm": 1
     })
     data = data.drop(columns=["session"])
     data["authors"] = data["authors"].apply(format_authors)

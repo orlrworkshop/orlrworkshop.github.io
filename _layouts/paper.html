@@ -24,7 +24,7 @@ session_2: true
 		{% if page.session_id > 0 %}
 		<li>
 		{% if page.camera_ready %}
-        <span><a href="https://github.com/oolworkshop/oolworkshop.github.io/blob/master/pdf/OOL_{{ page.id }}.pdf" target="_blank">PDF</a></span>
+        <span><a href="https://github.com/orlrworkshop/orlrworkshop.github.io/blob/master/pdf/ORLR_{{ page.id }}.pdf" target="_blank">PDF</a></span>
 		{% else %}
 		<span>PDF</span>
 		{% endif %}
@@ -32,12 +32,12 @@ session_2: true
 		<span> · </span>
 		<span><a href="{{ page.meeting_url }}" target="_blank">Join Meeting Room</a></span>
 		<span> · </span>
-		<span>See <a href="https://icml.cc/virtual/2020/workshop/5731">ICML Portal</a> for password</span>
+		<span>See <a href="https://neurips.cc/virtual/2020/workshop/5731">NeurIPS Portal</a> for password</span>
 		{% elsif page.session_id == 2 and layout.session_2 and page.meeting_url %}
 		<span> · </span>
 		<span><a href="{{ page.meeting_url }}" target="_blank">Join Meeting Room</a></span>
 		<span> · </span>
-		<span>See <a href="https://icml.cc/virtual/2020/workshop/5731">ICML Portal</a> for password</span>
+		<span>See <a href="https://icml.cc/virtual/2020/workshop/5731">NeurIPS Portal</a> for password</span>
 		{% endif %}
 		</li>
 		{% endif %}
@@ -45,49 +45,49 @@ session_2: true
 </div>
 </div>
 
-{% if page.kind == "poster" %}
-    <div class="row justify-content-center" style="position: relative; padding-bottom: 56.25%; height: 0;"> 
-      <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="560" height="350" src={{ page.youtube_url | replace: "youtu.be", "www.youtube.com/embed" }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="row justify-content-center">
-    	<p><a href="{{ page.video_file_url }}" target="_blank">Downloadable Video File</a></p>
-    </div>
-  {% elsif page.kind == "oral" or page.kind == "spotlight" %}
-  {% assign today_date = 'now' | date: '%s' %}
-  {% assign publish_date = "August 1, 2020" | date: '%s' %}
-  {% if today_date > publish_date %}
-<!--        <div class="row justify-content-center">-->
-<!--          <div class="col">-->
-<!--            <div id="presentation-embed-{{ page.slides_live_id }}" class="container container-sm"></div>-->
-<!--            <script src='https://slideslive.com/embed_presentation.js'></script>-->
-<!--            <script>-->
-<!--              embed = new SlidesLiveEmbed('presentation-embed-{{ page.slides_live_id }}', {-->
-<!--              presentationId: '{{ page.slides_live_id }}',-->
-<!--              autoPlay: false, // change to true to autoplay the embedded presentation-->
-<!--              verticalEnabled: true,-->
-<!--              allowHiddenControlsWhenPaused: true,-->
-<!--              zoomRatio: 0.25,-->
-<!--              hideTitle: true,-->
-<!--              });-->
-<!--            </script>-->
-<!--            </div>-->
-<!--          </div>-->
-    <div style="position: relative; padding-bottom: 56.25%; height: 0;"> 
-        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="560" height="350" src="https://slideslive.com/{{ page.slides_live_id }}" frameborder="0"></iframe>
-    </div>
-  {% else %}
-  <div class="row justify-content-center">
-    <p><i>The video will become available after 1st August 2020 in accordance with the ICML2020 Code of Conduct.</i></p>
-  </div>
-  {% endif %}
-  {% endif %}
+<!--{% if page.kind == "poster" %}-->
+<!--    <div class="row justify-content-center" style="position: relative; padding-bottom: 56.25%; height: 0;"> -->
+<!--      <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="560" height="350" src={{ page.youtube_url | replace: "youtu.be", "www.youtube.com/embed" }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<!--    </div>-->
+<!--    <div class="row justify-content-center">-->
+<!--    	<p><a href="{{ page.video_file_url }}" target="_blank">Downloadable Video File</a></p>-->
+<!--    </div>-->
+<!--  {% elsif page.kind == "oral" or page.kind == "spotlight" %}-->
+<!--  {% assign today_date = 'now' | date: '%s' %}-->
+<!--  {% assign publish_date = "August 1, 2020" | date: '%s' %}-->
+<!--  {% if today_date > publish_date %}-->
+<!--&lt;!&ndash;        <div class="row justify-content-center">&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="col">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div id="presentation-embed-{{ page.slides_live_id }}" class="container container-sm"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <script src='https://slideslive.com/embed_presentation.js'></script>&ndash;&gt;-->
+<!--&lt;!&ndash;            <script>&ndash;&gt;-->
+<!--&lt;!&ndash;              embed = new SlidesLiveEmbed('presentation-embed-{{ page.slides_live_id }}', {&ndash;&gt;-->
+<!--&lt;!&ndash;              presentationId: '{{ page.slides_live_id }}',&ndash;&gt;-->
+<!--&lt;!&ndash;              autoPlay: false, // change to true to autoplay the embedded presentation&ndash;&gt;-->
+<!--&lt;!&ndash;              verticalEnabled: true,&ndash;&gt;-->
+<!--&lt;!&ndash;              allowHiddenControlsWhenPaused: true,&ndash;&gt;-->
+<!--&lt;!&ndash;              zoomRatio: 0.25,&ndash;&gt;-->
+<!--&lt;!&ndash;              hideTitle: true,&ndash;&gt;-->
+<!--&lt;!&ndash;              });&ndash;&gt;-->
+<!--&lt;!&ndash;            </script>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--    <div style="position: relative; padding-bottom: 56.25%; height: 0;"> -->
+<!--        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="560" height="350" src="https://slideslive.com/{{ page.slides_live_id }}" frameborder="0"></iframe>-->
+<!--    </div>-->
+<!--  {% else %}-->
+<!--  <div class="row justify-content-center">-->
+<!--    <p><i>The video will become available after 1st August 2020 in accordance with the ICML2020 Code of Conduct.</i></p>-->
+<!--  </div>-->
+<!--  {% endif %}-->
+<!--{% endif %}-->
 
 <div class="row justify-content-center">
 <p align=justify>{{ page.abstract }} </p>
 </div>
 
-{% if page.track == "research" %}
-<div class="row justify-content-center">
-      <iframe frameborder="0" src="https://icml-rocketchat.meteorapp.com/channel/{{ page.rocket_id }}?layout=embedded" width="100%" height="680px"></iframe>
-</div>
-{% endif %}
+<!--{% if page.track == "research" %}-->
+<!--<div class="row justify-content-center">-->
+<!--      <iframe frameborder="0" src="https://icml-rocketchat.meteorapp.com/channel/{{ page.rocket_id }}?layout=embedded" width="100%" height="680px"></iframe>-->
+<!--</div>-->
+<!--{% endif %}-->

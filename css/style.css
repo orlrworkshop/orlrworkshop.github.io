@@ -172,6 +172,10 @@ table {
   margin-top: 0;
 }
 
+.paper h3 {
+  color: #9B4F0F;
+}
+
 .col {
   padding: 0;
 }

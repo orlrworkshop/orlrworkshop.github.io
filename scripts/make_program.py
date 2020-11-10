@@ -46,7 +46,7 @@ def make_jekyll_data():
 
     # Process sessions.
     sessions = []
-    for session in [1, 2]:
+    for session in [1]:  # TODO revert to [1, 2]
         session_data = data.query("session == {}".format(session))
         session_title, = session_data["session_title"].unique()
         session_data = pd.concat([
@@ -95,7 +95,7 @@ def make_program():
         print(data["unique_id"])
 
         if INCLUDE_MEETING_URLS:
-            meeting_id = "OOL_{}".format(data["unique_id"])
+            meeting_id = "ORLR_{}".format(data["unique_id"])
             if meeting_json_exists(meeting_id):
                 meeting = read_meeting_json(meeting_id)
                 data["meeting_url"] = meeting["join_url"]
@@ -110,12 +110,12 @@ def make_program():
         data["abstract"] = data["abstract"]
         data["live"] = str(data["live"]).lower()
 
-        data["rocket_id"] = "ool-paper-{:d}".format(data["unique_id"])
+        data["rocket_id"] = "orlr-paper-{:d}".format(data["unique_id"])
         if data["kind"] == "opening":
             data["rocket_id"] = "object-oriented-learning-perception-representation-and-reasoning-11"
 
         html = TEMPLATE.format(**data)
-        path = "program/ool_{}.html".format(data["unique_id"])
+        path = "program/orlr_{}.html".format(data["unique_id"])
         assert not os.path.exists(path)
         with open(path, "w") as fh:
             fh.write(html)
@@ -127,7 +127,7 @@ def add_zoom_links():
         print(data["unique_id"])
 
         if INCLUDE_MEETING_URLS:
-            meeting_id = "OOL_{}".format(data["unique_id"])
+            meeting_id = "ORLR_{}".format(data["unique_id"])
             if meeting_json_exists(meeting_id):
                 meeting = read_meeting_json(meeting_id)
                 data["meeting_url"] = meeting["join_url"]
@@ -137,7 +137,7 @@ def add_zoom_links():
         else:
             data["meeting_url"] = ""
 
-        path = "program/ool_{}.html".format(data["unique_id"])
+        path = "program/orlr_{}.html".format(data["unique_id"])
         with open(path, "r") as fh:
             html = fh.read()
 
@@ -150,6 +150,6 @@ def add_zoom_links():
 
 
 if __name__ == "__main__":
-    # make_jekyll_data()
-    # make_program()
-    add_zoom_links()
+    make_jekyll_data()
+    make_program()
+    # add_zoom_links()
