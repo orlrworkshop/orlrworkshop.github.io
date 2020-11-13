@@ -433,7 +433,7 @@
       an empirical paradigm, human dataset, and set of evaluation metrics that can
       be used to guide the development of artificial agents that emulate human-like
       compositionality and abstraction.'
-    authors: William P McCarthy, Judy Fan, Robert Hawkins, and Cameron Holdaway
+    authors: William P McCarthy, Robert Hawkins, and Cameron Holdaway, Judy Fan
     camera_ready: false
     cmt_id: 15
     id: 15
