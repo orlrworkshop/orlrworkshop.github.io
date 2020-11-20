@@ -1,5 +1,83 @@
 - abstract: TBD
-  authors: TBD TBD
+  authors: Elizabeth Spelke
+  id: 30
+  kind: oral
+  title: TBD
+- abstract: TBD
+  authors: Jessica Hamrick
+  id: 31
+  kind: oral
+  title: TBD
+- abstract: We all seem to know intuitively what an object is, however the notion
+    of an object appears to be very hard to define precisely. In order to move forward
+    in building better object representations for learning and reasoning, it is important
+    to first agree on what objects are. In this talk I will propose an operational
+    definition of objects using insights from physics. I will then use this definition
+    to suggest what a good object-centered representation should look like, and why
+    it might be useful for more efficient and robust learning and reasoning.
+  authors: Irina Higgins
+  id: 32
+  kind: oral
+  title: What is an object?
+- abstract: 'Objects and their interactions are the foundational structure of the
+    world that plays the central role in our perception, reasoning, and control of
+    the world. Incorporating such structural knowledge is thus expected to resolve
+    various limitations of current deep learning systems in reasoning, causality,
+    modularity, and systematic generalization. However, current deep learning systems
+    are limited in providing such structures: they either extensively rely on human
+    annotations or uses unsupervised representations with a minimal uninterpretable
+    structure. In this talk, I present recent advances in object-centric latent variable
+    models. I first argue that this class of models provide a probabilistic modeling
+    framework to learn interpretable, structured, and adaptable representations as
+    well as the compositional imagination of multi-object scenes in an unsupervised
+    manner. Also, I present the benefits of combining symbolic and distributed representations
+    in these models, and an approach to learn three-dimensional scene representations
+    in an object-centric manner. I conclude that human-like AI agents should understand
+    the causal structured of the world and the object-centric representations can
+    be the foundation of building such world models.'
+  authors: Sungjin Ahn
+  id: 33
+  kind: oral
+  title: Unsupervising Vision via Object-Centric World Models
+- abstract: TBD
+  authors: Wilka Carvalho
   id: 34
+  kind: oral
+  title: TBD
+- abstract: "Research over the last few decades has shed considerable light on how\
+    \ infants represent and reason about objects in simple physical events, such as\
+    \ occlusion, containment, and support events. My talk summarizes key findings\
+    \ from this research. First, representations of objects in physical events are\
+    \ initially very sparse and lacking in featural detail; nevertheless, they are\
+    \ still sufficient, when interpreted by infants\u2019 core physical knowledge,\
+    \ to allow infants to correctly predict the outcomes of many physical events.\
+    \ Second, object representations become richer and more detailed as infants form\
+    \ event categories and, for each category, identify features that are causally\
+    \ relevant for predicting outcomes. Third, once a feature has been identified\
+    \ as relevant to an event category, it is represented for any event in the category,\
+    \ thereby ensuring powerful generalization. Fourth, features identified in one\
+    \ event category are not generalized to other event categories, even when equally\
+    \ relevant, resulting at times in striking discrepancies in infants\u2019 responses\
+    \ to similar events from different categories. Fifth, one of the learning mechanisms\
+    \ by which infants identify features is explanation-based learning; because this\
+    \ mechanism uses analytical as well as empirical evidence, it is highly efficient\
+    \ and allows infants to acquire new featural rules with few exemplars. Finally,\
+    \ the cognitive architecture that underlies early representations of objects in\
+    \ physical reasoning includes at least two systems, an object-file and a physical-reasoning\
+    \ system, each with a different role; understanding how each system represents\
+    \ objects, how these representations change with experience, and how the two systems\
+    \ exchange information as events unfold helps explain the findings described above.\
+    \ Together, these findings make clear that object representations in infancy are\
+    \ far from monolithic: They are both system-specific (the same object may be represented\
+    \ differently in different systems) and event-specific (the same object may be\
+    \ represented differently in different events), and they become gradually richer\
+    \ with experience."
+  authors: "Ren\xE9e Baillargeon"
+  id: 35
+  kind: oral
+  title: How Infants Represent Objects in Physical Events
+- abstract: TBD
+  authors: Dieter Fox
+  id: 36
   kind: oral
   title: TBD
