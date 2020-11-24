@@ -2,11 +2,15 @@
   authors: Elizabeth Spelke
   id: 30
   kind: oral
+  poster: false
+  supplement: false
   title: TBD
 - abstract: TBD
   authors: Jessica Hamrick
   id: 31
   kind: oral
+  poster: false
+  supplement: false
   title: TBD
 - abstract: We all seem to know intuitively what an object is, however the notion
     of an object appears to be very hard to define precisely. In order to move forward
@@ -18,6 +22,8 @@
   authors: Irina Higgins
   id: 32
   kind: oral
+  poster: false
+  supplement: false
   title: What is an object?
 - abstract: 'Objects and their interactions are the foundational structure of the
     world that plays the central role in our perception, reasoning, and control of
@@ -38,11 +44,15 @@
   authors: Sungjin Ahn
   id: 33
   kind: oral
+  poster: false
+  supplement: false
   title: Unsupervising Vision via Object-Centric World Models
 - abstract: TBD
   authors: Wilka Carvalho
   id: 34
   kind: oral
+  poster: false
+  supplement: false
   title: TBD
 - abstract: "Research over the last few decades has shed considerable light on how\
     \ infants represent and reason about objects in simple physical events, such as\
@@ -75,9 +85,13 @@
   authors: "Ren\xE9e Baillargeon"
   id: 35
   kind: oral
+  poster: false
+  supplement: false
   title: How Infants Represent Objects in Physical Events
 - abstract: TBD
   authors: Dieter Fox
   id: 36
   kind: oral
+  poster: false
+  supplement: false
   title: TBD
