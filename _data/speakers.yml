@@ -5,13 +5,24 @@
   poster: false
   supplement: false
   title: TBD
-- abstract: TBD
+- abstract: Physical construction---the ability to compose objects, subject to physical
+    dynamics, to serve some function---is fundamental to human intelligence. In this
+    talk, I will introduce a suite of challenging physical construction tasks inspired
+    by how children play with blocks, such as matching a target configuration, stacking
+    blocks to connect objects together, and creating shelter-like structures over
+    target objects. I'll discuss a new way of creating object-centric, structured
+    agents using graph representations, and show that such agents both outperform
+    those which use less structured representations and generalize better beyond their
+    training when asked to reason about larger scenes. Overall, I argue that agents
+    which combine structured representations and reasoning with powerful learning
+    are a key path toward agents that possess rich intuitive physics, scene understanding,
+    and planning.
   authors: Jessica Hamrick
   id: 31
   kind: oral
   poster: false
   supplement: false
-  title: TBD
+  title: Structured agents for object-centric reasoning
 - abstract: We all seem to know intuitively what an object is, however the notion
     of an object appears to be very hard to define precisely. In order to move forward
     in building better object representations for learning and reasoning, it is important
@@ -47,13 +58,31 @@
   poster: false
   supplement: false
   title: Unsupervising Vision via Object-Centric World Models
-- abstract: TBD
+- abstract: 'First-person object-interaction tasks in high-fidelity, 3D, simulated
+    environments such as the AI2Thor virtual home-environment pose significant sample-efficiency
+    challenges for reinforcement learning (RL) agents learning from sparse task rewards.
+    To alleviate these challenges, prior work has provided extensive supervision via
+    a combination of reward-shaping, ground-truth object-information, and expert demonstrations.
+    In this work, we show that one can learn object-interaction tasks from scratch
+    without supervision by learning an attentive object-model as an auxiliary task
+    during task learning with an object-centric relational RL agent. Our key insight
+    is that learning an object-model that incorporates object-relationships into forward
+    prediction provides a dense learning signal for unsupervised representation learning
+    of both objects and their relationships. This, in turn, enables faster policy
+    learning for an object-centric relational RL agent. We demonstrate our agent by
+    introducing a set of challenging object-interaction tasks in the AI2Thor environment
+    where learning with our attentive object-model is key to strong performance. Specifically,
+    we compare our agent and relational RL agents with alternative auxiliary tasks
+    to a relational RL agent equipped with ground-truth object-information, and show
+    that learning with our object-model best closes the performance gap in terms of
+    both learning speed and maximum success rate. '
   authors: Wilka Carvalho
   id: 34
   kind: oral
   poster: false
   supplement: false
-  title: TBD
+  title: Learning Object-interaction Tasks with Less Supervision by Learning an Attentive
+    Object-model
 - abstract: "Research over the last few decades has shed considerable light on how\
     \ infants represent and reason about objects in simple physical events, such as\
     \ occlusion, containment, and support events. My talk summarizes key findings\
