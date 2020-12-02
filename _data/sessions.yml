@@ -37,7 +37,7 @@
       benchmarks.'
     authors: Kelsey Allen, Anton Bakhtin, Kevin Smith, Joshua Tenenbaum, and Laurens
       van der Maaten
-    camera_ready: false
+    camera_ready: true
     cmt_id: 9
     id: 9
     kind: oral
@@ -263,7 +263,7 @@
       FOL in PDDL action modeling, while existing systems are limited to continuous,
       propositional, or property-based representations, and/or require labeled actions.
     authors: Masataro Asai
-    camera_ready: false
+    camera_ready: true
     cmt_id: 1
     id: 1
     kind: poster
@@ -386,7 +386,7 @@
       it discovers independent representations per object and binary properties such
       as a key-and-door.
     authors: Thanard Kurutach, Julia Peng, Yang Gao, Stuart Russell, and Pieter Abbeel
-    camera_ready: false
+    camera_ready: true
     cmt_id: 7
     id: 7
     kind: poster
