@@ -117,10 +117,13 @@
   poster: false
   supplement: false
   title: How Infants Represent Objects in Physical Events
-- abstract: TBD
+- abstract: Reasoning about objects is a fundamental task in robot manipulation. Different
+    representations can have important repercussions on the capabilities and generality
+    of a manipulation system. In this talk I will discuss different ways we represent
+    and reason about objects, ranging from explicit 3D models to raw point clouds.
   authors: Dieter Fox
   id: 36
   kind: oral
   poster: false
   supplement: false
-  title: TBD
+  title: Object representations for robot manipulation
