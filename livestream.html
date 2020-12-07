@@ -1,7 +1,7 @@
 ---
 layout: default
 livestream: false
-slides_live_id: 38931865
+slides_live_id:
 join_link: 
 ---
 
@@ -9,9 +9,63 @@ join_link:
 <p>You can also view the livestream on the <a href="https://iclr.cc/virtual/workshops_4.html" target="_blank">ICLR BAICS Portal</a>.</p>
 </div> -->
 
-<div class="row justify-content-center">
-  <div><span>Please visit the virtual workshop page for the livestream access.</span></div>
-  <div class="rocket">
-    <iframe frameborder="0" src="https://icml-rocketchat.meteorapp.com/channel/object-oriented-learning-perception-representation-and-reasoning-11?layout=embedded" width="100%" height="680px"></iframe>
-  </div>
+
+<div>
+    <div class id="video"> <div id="presentation-embed" class="slp my-auto"></div>
+        <script src="https://slideslive.com/embed_presentation.js"></script> <script>
+          embed = new SlidesLiveEmbed("presentation-embed", {
+            presentationId: "38946820",
+            autoPlay: false, // change to true to autoplay the embedded presentation
+            verticalEnabled: true,
+            verticalWhenWidthLte: 500,
+            allowHiddenControlsWhenPaused: true,
+            hideTitle: true,
+          });
+        </script>
+    </div>
+</div>
+<div class="col-6 py-2 ">
+
+<div class="container">
+    <div class="pp-card m-3">
+        <div class="" id="rocketchat-div">
+            <div class="public-chat-title-box">
+
+                    <span class="float-left"><a class="text-warning text-sm" href="https://neurips.cc/rocketchat/concerns"  target="_blank">Concerns</a></span>
+
+                <a style="float:right;" href="https://neurips2020.rocket.chat/channel/object-representations-for-learning-and-reasoning-99?resumeToken=vke4_Rjdnl0-yMsH2dWVUYpxWZvleHvnBvqnr2ieNGH" target="_blank" title="Full Size">
+                    <i class="fas fa-expand"></i>
+                </a>
+            </div>
+
+            <script>
+                function authenticateRocketChat() {
+                    const rc_window = document.getElementById('rocketchat-iframe').contentWindow
+                    console.log("Calling rocketchat postMessage login-with-token vke4_Rjdnl0-yMsH2dWVUYpxWZvleHvnBvqnr2ieNGH path /channel/object-representations-for-learning-and-reasoning-99 window ")
+                    rc_window.postMessage({
+                        externalCommand: 'login-with-token',
+                        token: 'vke4_Rjdnl0-yMsH2dWVUYpxWZvleHvnBvqnr2ieNGH'
+                    }, 'https://neurips2020.rocket.chat');
+
+
+                    rc_window.postMessage({
+                        externalCommand: 'go',
+                        path: '/channel/object-representations-for-learning-and-reasoning-99'
+                    }, 'https://neurips2020.rocket.chat');
+                }
+
+                window.addEventListener('message', function(e) {
+                    if (e.origin == 'https://neurips2020.rocket.chat') {
+                        console.log("rocketchat event", e.data); // event name
+                    } else {
+                        console.log("message from ", e.origin)
+                    }
+                });
+                $(window).on("load", function() {setTimeout(authenticateRocketChat, 1000);});
+            </script>
+            <iframe frameBorder="0" width='100%' height='400px' src="https://neurips2020.rocket.chat/channel/object-representations-for-learning-and-reasoning-99?layout=embedded"  id="rocketchat-iframe"
+                    onload="authenticateRocketChat()" onerror="console.log('Rocketchat iframe error')">
+            </iframe>
+         </div>
+    </div>
 </div>
