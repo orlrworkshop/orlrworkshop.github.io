@@ -45,7 +45,24 @@ session_2: true
 </div>
 </div>
 
-<!--{% if page.kind == "poster" %}-->
+{% if page.live == true %}
+<div>
+    <div class id="video"> <div id="presentation-embed" class="slp my-auto"></div>
+        <script src="https://slideslive.com/embed_presentation.js"></script> <script>
+          embed = new SlidesLiveEmbed("presentation-embed", {
+            presentationId: "{{ page.slides_live_id }}",
+            autoPlay: false, // change to true to autoplay the embedded presentation
+            verticalEnabled: true,
+            verticalWhenWidthLte: 500,
+            allowHiddenControlsWhenPaused: true,
+            hideTitle: true,
+          });
+        </script>
+    </div>
+</div>
+</br>
+{% endif %}
+<!--{% if page.kind == "poster" or page.kind == "oral" or page.kind == "spotlight"%}-->
 <!--    <div class="row justify-content-center" style="position: relative; padding-bottom: 56.25%; height: 0;"> -->
 <!--      <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="560" height="350" src={{ page.youtube_url | replace: "youtu.be", "www.youtube.com/embed" }} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 <!--    </div>-->
@@ -56,23 +73,23 @@ session_2: true
 <!--  {% assign today_date = 'now' | date: '%s' %}-->
 <!--  {% assign publish_date = "August 1, 2020" | date: '%s' %}-->
 <!--  {% if today_date > publish_date %}-->
-<!--&lt;!&ndash;        <div class="row justify-content-center">&ndash;&gt;-->
-<!--&lt;!&ndash;          <div class="col">&ndash;&gt;-->
-<!--&lt;!&ndash;            <div id="presentation-embed-{{ page.slides_live_id }}" class="container container-sm"></div>&ndash;&gt;-->
-<!--&lt;!&ndash;            <script src='https://slideslive.com/embed_presentation.js'></script>&ndash;&gt;-->
-<!--&lt;!&ndash;            <script>&ndash;&gt;-->
-<!--&lt;!&ndash;              embed = new SlidesLiveEmbed('presentation-embed-{{ page.slides_live_id }}', {&ndash;&gt;-->
-<!--&lt;!&ndash;              presentationId: '{{ page.slides_live_id }}',&ndash;&gt;-->
-<!--&lt;!&ndash;              autoPlay: false, // change to true to autoplay the embedded presentation&ndash;&gt;-->
-<!--&lt;!&ndash;              verticalEnabled: true,&ndash;&gt;-->
-<!--&lt;!&ndash;              allowHiddenControlsWhenPaused: true,&ndash;&gt;-->
-<!--&lt;!&ndash;              zoomRatio: 0.25,&ndash;&gt;-->
-<!--&lt;!&ndash;              hideTitle: true,&ndash;&gt;-->
-<!--&lt;!&ndash;              });&ndash;&gt;-->
-<!--&lt;!&ndash;            </script>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;          </div>&ndash;&gt;-->
-<!--    <div style="position: relative; padding-bottom: 56.25%; height: 0;"> -->
+<!--        <div class="row justify-content-center">-->
+<!--          <div class="col">-->
+<!--            <div id="presentation-embed-{{ page.slides_live_id }}" class="container container-sm"></div>-->
+<!--            <script src='https://slideslive.com/embed_presentation.js'></script>-->
+<!--            <script>-->
+<!--              embed = new SlidesLiveEmbed('presentation-embed-{{ page.slides_live_id }}', {-->
+<!--              presentationId: '{{ page.slides_live_id }}',-->
+<!--              autoPlay: false, // change to true to autoplay the embedded presentation-->
+<!--              verticalEnabled: true,-->
+<!--              allowHiddenControlsWhenPaused: true,-->
+<!--              zoomRatio: 0.25,-->
+<!--              hideTitle: true,-->
+<!--              });-->
+<!--            </script>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--    <div style="position: relative; padding-bottom: 56.25%; height: 0;">-->
 <!--        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="560" height="350" src="https://slideslive.com/{{ page.slides_live_id }}" frameborder="0"></iframe>-->
 <!--    </div>-->
 <!--  {% else %}-->
@@ -81,8 +98,8 @@ session_2: true
 <!--  </div>-->
 <!--  {% endif %}-->
 <!--{% endif %}-->
-
 <div class="row justify-content-center">
+	<h3>Abstract</h3>
 <p align=justify>{{ page.abstract }} </p>
 </div>
 
