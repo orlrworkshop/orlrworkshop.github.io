@@ -47,8 +47,8 @@ def make_jekyll_data():
     # Process sessions.
     sessions = []
     for session in [1]:  # TODO revert to [1, 2]
-        session_data = data.query("session == {}".format(session))
-        session_title, = session_data["session_title"].unique()
+        session_data = data.query("session == 1 | session == 2 | session == 3")
+        # session_title, = session_data["session_title"].unique()
         session_data = pd.concat([
             session_data.query("kind == 'oral'"),
             session_data.query("kind == 'spotlight'"),
@@ -61,7 +61,7 @@ def make_jekyll_data():
         ])
         sessions.append({
             "id": session,
-            "title": session_title,
+            "title": "",
             "papers": session_data.to_dict(orient="records")
         })
     with open("_data/sessions.yml", "w") as fh:

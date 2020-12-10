@@ -40,7 +40,9 @@ def load_presentation_data():
         "opening": 0,
         # "3:30-4:30pm": 1,
         # "11:00-11:59pm": 2,
-        "11:59-11:59pm": 1
+        "09:30-10:30am": 1,
+        "06:15-07:15pm": 2,
+        "09:30-10:30am/06:15-07:15pm": 3,
     })
     data = data.drop(columns=["session"])
     data["authors"] = data["authors"].apply(format_authors)

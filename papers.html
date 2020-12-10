@@ -5,10 +5,12 @@ layout: default
 <div id="program">
 
 <div class="row">
-     <p>Preliminary paper list.</p>
-<!--<p>For each paper being presented at the workshop, we will host (1) the pre-recorded presentation from SlidesLive, (2) a Rocket.Chat chatroom for text-based discussion, and (3) a Zoom meeting room. All of these can be found from each paper's landing page (which you can access by clicking on the title of the relevant paper).</p>-->
-<!--<p>For each paper being presented at the workshop, we will host (1) pre-recorded content (either from SlidesLive or via YouTube), (2) a Rocket.Chat chatroom for text-based discussion and (3) a Zoom meeting room. All of these can be found from each paper's landing page (which you can access by clicking on the title of the relevant paper).</p>-->
-<!--<p>The Zoom meeting rooms will be open only during the poster session timeslots (see the <a href="/schedule.html">Schedule</a>), during which authors will join the meeting rooms to allow you to ask them questions face-to-face. We encourage you to first watch the presentation associated with the paper, and then join the Zoom meeting room to ask questions and engage in further discussion.</p>-->
+<p>
+     For each paper being presented at the workshop, we will host a pdf of the paper and a pre-recorded
+     (lightning / contributed talk) from SlidesLive, both of which can be accessed from each paper's landing page
+     (which you can access by clicking on the title of the relevant paper).
+     We will also host a poster for each paper in GatherTown spread across <a href="/schedule.html"> two sessions</a>
+     (main session is indicated below). <i> All authors are encouraged to present in both sessions.</i></p>
 </div>
 
 {% for session in site.data.sessions %}
@@ -22,6 +24,7 @@ layout: default
           <th>Authors</th>
           <!-- <th>Track</th> -->
           <th>PDF</th>
+          <th>Session</th>
 </thead>
 <tbody>
 
@@ -54,7 +57,14 @@ layout: default
 <a href="https://github.com/orlrworkshop/orlrworkshop.github.io/blob/master/pdf/ORLR_{{ paper.id }}.pdf" target="_blank">PDF</a>
 {% endif %}
 </td>
-
+<td>
+{% if paper.session == 1 or paper.session == 2%}
+#{{paper.session}}
+{% endif %}
+{% if paper.session == 3%}
+#1/#2
+{% endif %}
+</td>
 
 </tr>
 {% endfor %}
